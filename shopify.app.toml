@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "my-first-app"
+client_id = "2b4bfdb63b3689b8c0ebe0bbf60498f7"
+application_url = "https://thee-harvard-assembly-rose.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://thee-harvard-assembly-rose.trycloudflare.com/auth/callback",
+  "https://thee-harvard-assembly-rose.trycloudflare.com/auth/shopify/callback",
+  "https://thee-harvard-assembly-rose.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "monster-eagle.myshopify.com"
